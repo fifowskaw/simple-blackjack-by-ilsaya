@@ -1,0 +1,88 @@
+:root {
+  --color-main: rgb(214, 166, 32);
+  --color-font: rgb(214, 214, 214);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(4, 19, 4);
+  background-image: url(background-img.jpg);
+  background-repeat: repeat;
+
+  width: 100vw;
+  height: 100vh;
+
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  color: var(--color-font);
+}
+main {
+  width: 100vw;
+  height: 618px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.game_title {
+  margin-top: 30px;
+  color: var(--color-main);
+}
+.message {
+  margin-top: 20px;
+  text-align: center;
+
+  color: var(--color-font);
+  font-size: 25px;
+  font-style: italic;
+}
+.cards {
+  margin-top: 20px;
+  font-size: 25px;
+
+  display: flex;
+}
+.sum {
+  margin-top: 20px;
+  font-size: 25px;
+
+  display: flex;
+}
+
+.game_buttons {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.start_game_button,
+.new_card_button,
+.change_language {
+  cursor: pointer;
+  margin-top: 10px;
+  width: 200px;
+  padding: 10px 0;
+
+  background-color: var(--color-main);
+  border: none;
+  border-radius: 5px;
+
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 22px;
+  color: rgb(0, 73, 0);
+}
+.change_language {
+  margin-top: 20px;
+  margin-left: 25px;
+  padding: 0;
+  width: 150px;
+  height: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    width: 100%;
+  }
+}
